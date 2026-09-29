@@ -1,16 +1,26 @@
 {
-  "name": "emaily",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "fastify": "^5.12.5"
-  }
+	"name": "emaily",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node --env-file=.env index.js",
+		"dev" : "nodemon index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"dependencies": {
+		"@biomejs/biome": "^2.5.14",
+		"@fastify/passport": "^4.0.3",
+		"@fastify/secure-session": "^8.4.0",
+		"fastify": "^5.12.5",
+		"passport": "~0.5.3",
+		"passport-google-oauth20": "^2.0.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.14"
+	}
 }
